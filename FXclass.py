@@ -30,12 +30,6 @@ def init(epic, Resolution, epic2):
 
     techIndMatrix['RiskRewards']='',np.array([])
 
-    techIndMatrix['News'] = ['','']
-
-    i = epic2
-    i = 'https://www.investing.com/'+i[0]+'/'+i[1],'https://www.dailyfx.com/'+i[-1]
-    techIndMatrix['NewsLinks'] = [(i[0]+'-news','investing/news'),(i[0]+'-opinion','investing/opinion'),(i[0]+'-commentary','investing/commentary'),(i[1],'dailyfx')]
-
     if(epic[:3]=='USD'):
         techIndMatrix['Name'] = epic[3:]
     else:
